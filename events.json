@@ -1,0 +1,1459 @@
+[
+  {
+    "name": "Brazil vs Tunisia",
+    "id": "122815",
+    "stadium": "Stade Pierre",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Category 2",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "ticketId": "882059",
+        "price": 38.7,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 38.7
+      },
+      {
+        "category": "Category 2",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 4 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "ticketId": "866630",
+        "price": 44.7,
+        "customAmount": "4 Seated Together",
+        "cheapestPrice": 44.7
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Arsenal vs Tottenham Hotspur",
+    "id": "114365",
+    "stadium": "Emirates Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Away Section",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "877233",
+        "price": 729.8,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 729.8,
+        "matchId": "114365"
+      },
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3
+        ],
+        "ticketId": "875951",
+        "price": 9999,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 419.1
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Paris Saint-Germain vs Tottenham Hotspur",
+    "id": "121693",
+    "stadium": "Parc des Princes",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Away Section",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "877234",
+        "price": 649.2,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 649.2
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Tottenham Hotspur vs Fulham",
+    "id": "114663",
+    "stadium": "Tottenham Hotspur Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2
+        ],
+        "ticketId": "875898",
+        "price": 84.8,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 84.8
+      },
+      {
+        "category": "Shortside Lower Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3
+        ],
+        "ticketId": "875918",
+        "price": 112,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 112
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Newcastle United vs Tottenham Hotspur",
+    "id": "114727",
+    "stadium": "St James Park",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Away Section",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2
+        ],
+        "ticketId": "875949",
+        "price": 123.6,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 123.6
+      },
+      {
+        "category": "Away Section",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "877235",
+        "price": 124,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 124
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Arsenal vs Brentford",
+    "id": "114352",
+    "stadium": "Emirates Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3
+        ],
+        "ticketId": "875952",
+        "price": 9999,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 189
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Tottenham Hotspur vs Brentford",
+    "id": "114657",
+    "stadium": "Tottenham Hotspur Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Lower Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875919",
+        "price": 70.1,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 70.1
+      },
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875899",
+        "price": 82,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 82
+      },
+      {
+        "category": "Central Longside Lower",
+        "block": [
+          "119",
+          "122",
+          "103",
+          "105"
+        ],
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "874598",
+        "price": 124.7,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 124.7
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Arsenal vs Wolverhampton Wanderers",
+    "id": "114367",
+    "stadium": "Emirates Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3
+        ],
+        "ticketId": "875953",
+        "price": 400,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 234.4
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Nottingham Forest vs Tottenham Hotspur",
+    "id": "114631",
+    "stadium": "City Ground",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Away Section",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "877236",
+        "price": 249.6,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 249.6
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Tottenham Hotspur vs Liverpool FC",
+    "id": "114665",
+    "stadium": "Tottenham Hotspur Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Lower Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875920",
+        "price": 146.7,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 146.7
+      },
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2
+        ],
+        "ticketId": "875900",
+        "price": 148,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 148
+      },
+      {
+        "category": "Central Longside Lower",
+        "block": [
+          "119",
+          "122",
+          "103",
+          "105"
+        ],
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "874599",
+        "price": 196.7,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 196.7
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Arsenal vs Brighton & Hove Albion",
+    "id": "114353",
+    "stadium": "Emirates Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3
+        ],
+        "ticketId": "875954",
+        "price": 466,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 274.1
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Crystal Palace vs Tottenham Hotspur",
+    "id": "114498",
+    "stadium": "Selhurst Park",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Away Section",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "877237",
+        "price": 249.1,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 249.1
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Arsenal vs Aston Villa",
+    "id": "114350",
+    "stadium": "Emirates Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3
+        ],
+        "ticketId": "875955",
+        "price": 314.4,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 314.4
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Brentford vs Tottenham Hotspur",
+    "id": "114422",
+    "stadium": "Community Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Away Section",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "877238",
+        "price": 374.6,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 374.6
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Tottenham Hotspur vs Sunderland",
+    "id": "114669",
+    "stadium": "Tottenham Hotspur Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875901",
+        "price": 75.5,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 75.5
+      },
+      {
+        "category": "Shortside Lower Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875921",
+        "price": 78,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 78
+      },
+      {
+        "category": "Central Longside Lower",
+        "block": [
+          "119",
+          "122",
+          "103",
+          "105"
+        ],
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "874600",
+        "price": 97.4,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 97.4
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Bournemouth vs Tottenham Hotspur",
+    "id": "114403",
+    "stadium": "Vitality Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Away Section",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "877239",
+        "price": 274.3,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 274.3
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Arsenal vs Liverpool FC",
+    "id": "114360",
+    "stadium": "Emirates Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3
+        ],
+        "ticketId": "875956",
+        "price": 9999,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 346.3
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Tottenham Hotspur vs West Ham United",
+    "id": "114670",
+    "stadium": "Tottenham Hotspur Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Lower Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875922",
+        "price": 73.3,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 73.3
+      },
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875902",
+        "price": 76.3,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 76.3
+      },
+      {
+        "category": "Central Longside Lower",
+        "block": [
+          "119",
+          "122",
+          "103",
+          "105"
+        ],
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "874601",
+        "price": 128,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 101.9
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Arsenal vs Manchester United",
+    "id": "114362",
+    "stadium": "Emirates Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3
+        ],
+        "ticketId": "875957",
+        "price": 9999,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 384.9
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Burnley vs Tottenham Hotspur",
+    "id": "114460",
+    "stadium": "Turf Moor",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Away Section",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "877240",
+        "price": 157,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 157
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Eintracht Frankfurt vs Tottenham Hotspur",
+    "id": "121645",
+    "stadium": "Commerzbank Arena",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Away Section",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "877241",
+        "price": 649.3,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 649.3
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Tottenham Hotspur vs Manchester City",
+    "id": "114666",
+    "stadium": "Tottenham Hotspur Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875903",
+        "price": 101.4,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 101.4
+      },
+      {
+        "category": "Shortside Lower Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875923",
+        "price": 127.1,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 127.1
+      },
+      {
+        "category": "Central Longside Lower",
+        "block": [
+          "119",
+          "122",
+          "103",
+          "105"
+        ],
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "874602",
+        "price": 167.3,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 167.3
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Arsenal vs Sunderland",
+    "id": "114364",
+    "stadium": "Emirates Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3
+        ],
+        "ticketId": "875958",
+        "price": 9999,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 294
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Manchester United vs Tottenham Hotspur",
+    "id": "114612",
+    "stadium": "Old Trafford",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Away Section",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "877242",
+        "price": 224,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 224
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Tottenham Hotspur vs Newcastle United",
+    "id": "114672",
+    "stadium": "Tottenham Hotspur Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Lower Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875924",
+        "price": 109.1,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 109.1
+      },
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875904",
+        "price": 115,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 79.3
+      },
+      {
+        "category": "Central Longside Lower",
+        "block": [
+          "119",
+          "122",
+          "103",
+          "105"
+        ],
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "874603",
+        "price": 130,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 101.2
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Arsenal vs Chelsea",
+    "id": "114355",
+    "stadium": "Emirates Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3
+        ],
+        "ticketId": "875959",
+        "price": 9999,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 334.6
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Fulham vs Tottenham Hotspur",
+    "id": "114536",
+    "stadium": "Craven Cottage",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Away Section",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "877243",
+        "price": 254.8,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 254.8
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Tottenham Hotspur vs Crystal Palace",
+    "id": "114661",
+    "stadium": "Tottenham Hotspur Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Lower Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875926",
+        "price": 72.5,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 72.5
+      },
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875906",
+        "price": 84.6,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 84.6
+      },
+      {
+        "category": "Central Longside Lower",
+        "block": [
+          "119",
+          "122",
+          "103",
+          "105"
+        ],
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "874605",
+        "price": 124,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 101.6
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Arsenal vs Everton",
+    "id": "114357",
+    "stadium": "Emirates Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3
+        ],
+        "ticketId": "875960",
+        "price": 274.1,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 274.1
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Liverpool FC vs Tottenham Hotspur",
+    "id": "114574",
+    "stadium": "Anfield",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Away Section",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "877244",
+        "price": 399.6,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 399.6
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Tottenham Hotspur vs Nottingham Forest",
+    "id": "114668",
+    "stadium": "Tottenham Hotspur Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875907",
+        "price": 77.7,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 77.7
+      },
+      {
+        "category": "Shortside Lower Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875927",
+        "price": 88.6,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 88.6
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Arsenal vs Bournemouth",
+    "id": "114351",
+    "stadium": "Emirates Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3
+        ],
+        "ticketId": "875961",
+        "price": 224,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 224
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Sunderland vs Tottenham Hotspur",
+    "id": "114650",
+    "stadium": "Stadium of Light",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Away Section",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "877245",
+        "price": 249.4,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 249.4
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Tottenham Hotspur vs Brighton & Hove Albion",
+    "id": "114658",
+    "stadium": "Tottenham Hotspur Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875908",
+        "price": 88,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 88
+      },
+      {
+        "category": "Shortside Lower Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875928",
+        "price": 99.7,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 99.7
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Arsenal vs Newcastle United",
+    "id": "114368",
+    "stadium": "Emirates Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3
+        ],
+        "ticketId": "875962",
+        "price": 500,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 313.9
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Wolverhampton Wanderers vs Tottenham Hotspur",
+    "id": "114708",
+    "stadium": "Molineux",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Away Section",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "877246",
+        "price": 205.3,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 205.3
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Arsenal vs Fulham",
+    "id": "114358",
+    "stadium": "Emirates Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3
+        ],
+        "ticketId": "875963",
+        "price": 999.3,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 999.3
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Aston Villa vs Tottenham Hotspur",
+    "id": "114384",
+    "stadium": "Villa Park",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Away Section",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "877247",
+        "price": 220.2,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 220.2
+      }
+    ],
+    "listingsToFix": []
+  },
+  {
+    "name": "Tottenham Hotspur vs Everton",
+    "id": "114662",
+    "stadium": "Tottenham Hotspur Stadium",
+    "listingsJsons": [],
+    "allMatchListings": [],
+    "myListings": [
+      {
+        "category": "Shortside Upper Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Up To 2 Seats Together",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875910",
+        "price": 84,
+        "customAmount": "2 Seated Together",
+        "cheapestPrice": 84
+      },
+      {
+        "category": "Shortside Lower Level",
+        "block": "",
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "875930",
+        "price": 102.5,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 102.5,
+        "matchId": "114662"
+      },
+      {
+        "category": "Central Longside Lower",
+        "block": [
+          "119",
+          "122",
+          "103",
+          "105"
+        ],
+        "ageGroup": "Adult Tickets",
+        "viewType": "Clear View",
+        "splitType": "Single Seats",
+        "quantities": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticketId": "874609",
+        "price": 111,
+        "customAmount": "1 Seated Together",
+        "cheapestPrice": 111
+      }
+    ],
+    "listingsToFix": []
+  }
+]
