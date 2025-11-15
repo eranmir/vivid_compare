@@ -52,8 +52,61 @@ async function createNewTicket(client, events) {
     await saveEventsToFile(events)
 }
 
-
 function findCheapestPrices(events) {
+    const qMatches = (myQ, otherQ) => {
+        if (myQ === undefined || otherQ === undefined) return false;
+        myQ = Number(myQ);
+        otherQ = Number(otherQ);
+        if (Number.isNaN(myQ) || Number.isNaN(otherQ)) return false;
+
+        if (myQ === 1) return true;
+        if (myQ === 2) return otherQ !== 1;
+        if (myQ === 3) return otherQ === 3 || otherQ > 4;
+        if (myQ === 4) return otherQ === 4 || otherQ > 4;
+        if (myQ > 4) return otherQ > 4;
+        return false;
+    };
+
+    return events.map((event) => {
+        const their = event.theirListingsToCompare || [];
+        const my = event.myListingsToCompare || [];
+
+        const augmentedMy = my.map((myListing) => {
+            const myD = myListing.d;
+            const myQ = Number(myListing.q);
+
+            // Filter their listings to same d and matching q rule
+            const candidates = their.filter((other) => {
+                if (other.d !== myD) return false;
+                return qMatches(myQ, Number(other.q));
+            });
+
+            // Extract numeric prices (other.p) and find min
+            const prices = candidates
+                .map(o => {
+                    const p = Number(o.p);
+                    return Number.isFinite(p) ? p : null;
+                })
+                .filter(p => p !== null);
+
+            const cheapestPrice = prices.length > 0 ? Math.min(...prices) : null;
+            const difference = (cheapestPrice !== null) ? (Number(myListing.p) - cheapestPrice) : null;
+            return {
+                ...myListing,
+                cheapestPrice,
+                difference
+            };
+        });
+
+        return {
+            ...event,
+            myListingsToCompare: augmentedMy
+        };
+    });
+}
+
+/*
+function findCheapestPricesold(events) {
     return events.map((event) => {
         let myOffers = event.listings;
         let otherOffers = event.allMatchListings;
@@ -77,7 +130,7 @@ function findCheapestPrices(events) {
                 // }
             });
 
-            /*   if (!myOffer.isRestricted) {
+            /!*   if (!myOffer.isRestricted) {
                    relevantOffers = relevantOffers.filter(offer => !offer.isRestricted);
                }
 
@@ -86,7 +139,7 @@ function findCheapestPrices(events) {
                }
                if (!myOffer.isAdultJuniors && !myOffer.isJuniors) {
                    relevantOffers = relevantOffers.filter(offer => !offer.isAdultJuniors);
-               }*/
+               }*!/
 
             let filteredOffers = relevantOffers.filter(offer => {
                 const otherCustomAmount = offer.customAmount;
@@ -120,9 +173,9 @@ function findCheapestPrices(events) {
             if (prices.length > 1)
                 secondCheapest = prices[1];
 
-           /* if (cheapestPrice && secondCheapest && secondCheapest - cheapestPrice > 974.99) {
+           /!* if (cheapestPrice && secondCheapest && secondCheapest - cheapestPrice > 974.99) {
                 cheapestPrice = secondCheapest
-            }*/
+            }*!/
             if (!cheapestPrice) {
                 filteredOffers = relevantOffers.filter(offer => {
                     const otherCustomAmount = offer.customAmount;
@@ -161,38 +214,63 @@ function findCheapestPrices(events) {
         return event;
     })
 }
+*/
 
-
-function getOffersToFix(events, minimums) {
+// javascript
+function getOffersToFix(events = [])  {
     const didNotUpdateMessages = [];
+    const offersToFix = [];
 
-    for (const event of events) {
-        const listingsToFix = [];
+    const updatedEvents = (events || []).map((event) => {
+        const myListings = event.listings || []; // your original listings
+        const myCompare = event.myListingsToCompare || []; // augmented compare objects (have .difference)
 
-        for (const off of event.myListings || []) {
-            try {
-                const faceAmount = minimums[off.ticketId];
-                if (off.cheapestPrice !== null && Number(off.cheapestPrice.toFixed(2)) !== off.price) {
-                    if (!faceAmount || off.cheapestPrice >= faceAmount) {
-                        off.matchName = event.match;
-                        off.matchId = event.id;
-                        listingsToFix.push(event.listingsJsons.find((fullOffer) => fullOffer.ticket_id === off.ticketId));
-                    } else {
-                        didNotUpdateMessages.push(
-                            `did not update ${event.name} in section ${off.category} for ${off.customAmount} from ${off.price} to ${off.cheapestPrice} because minimum is ${faceAmount}`
-                        );
-                    }
-                }
-            } catch (e) {
-                console.log(`❌ Error in event ${event.match}:`, e);
+        const eventOffersToFix = [];
+
+        for (const cmp of myCompare) {
+            const numericId = cmp.i?.startsWith("VB") ? String(cmp.i.slice(2)) : String(cmp.i);
+            const myListing = myListings.find(l => String(l.id) === numericId);
+
+            if (!myListing) {
+                didNotUpdateMessages.push(`Missing my listing ${numericId} for event ${event.eventId || event.eventName || event.name || 'unknown'}`);
+                continue;
+            }
+
+            const diff = Number(cmp.difference);
+            if (!Number.isFinite(diff) || (diff < 0 && diff > -5)) continue;
+
+            const origPrice = Number(myListing.price);
+            if (!Number.isFinite(origPrice)) continue;
+
+            let newPrice =  Math.floor(origPrice - diff - 2)
+            newPrice -= Math.abs(newPrice * .01)
+
+            const faceValue = Number(myListing.faceValue ?? 0);
+
+            // Add to offersToFix only if newPrice is greater than facevalue
+            if (Number.isFinite(newPrice) && newPrice > faceValue) {
+                const offer = {
+                    ...myListing,
+                    newPrice: newPrice, // small extra deduction to ensure undercut
+                };
+                eventOffersToFix.push(offer);
+                offersToFix.push(offer);
             }
         }
 
-        event.listingsToFix = listingsToFix;
-    }
+        return {
+            ...event,
+            offersToFix: eventOffersToFix
+        };
+    });
 
-    return {events, didNotUpdateMessages};
+    return {
+        events: updatedEvents,
+        didNotUpdateMessages,
+        offersToFix
+    };
 }
+
 
 /*async function separateListings(events) {
     return events.map(event => {
@@ -266,7 +344,65 @@ async function separateListings(events) {
     return updatedEvents;
 }
 
-async function updateListings(listing) {
+async function updateListings(offers = []) {
+    const BATCH_SIZE = 50;
+    const WAIT_MS = 1000;
+    const headers = {
+        Accept: "application/json",
+        "Api-token": "e87666c8-85bf-471a-93c5-00e78770df55",
+        "Content-Type": "application/json"
+    };
+
+    const url = "https://brokers.vividseats.com/webservices/listings/v2/update";
+    const results = [];
+
+    for (let i = 0; i < (offers || []).length; i += BATCH_SIZE) {
+        const batch = offers.slice(i, i + BATCH_SIZE);
+        console.log(`🚀 Processing batch ${i / BATCH_SIZE + 1} (${batch.length} listings)`);
+
+        const batchResults = await Promise.all(batch.map(async (listing) => {
+            const newPrice = Number(listing.newPrice);
+            if (!Number.isFinite(newPrice)) {
+                console.warn(`Skipping ${listing.id}: invalid newPrice`, listing.newPrice);
+                return { id: listing.id, success: false, error: "invalid newPrice" };
+            }
+
+            const data = {
+                id: listing.id,
+                productionId: listing.productionId,
+                // keep row as-is (do not modify)
+                row: listing.row,
+                section: listing.section,
+                // only change the price to newPrice
+                price: newPrice,
+                splitType: listing.splitType,
+                stockType: listing.stockType ?? "TMET",
+                quantity: listing.quantity,
+            };
+
+            try {
+                const res = await axios.put(url, data, { headers });
+                console.log(`✅ Updated ${listing.id} -> ${data.price}`);
+                return { id: listing.id, success: true, data: res.data };
+            } catch (err) {
+                console.error(`❌ Failed ${listing.id}`, err.response?.data || err.message);
+                return { id: listing.id, success: false, error: err.response?.data || err.message };
+            }
+        }));
+
+        results.push(...batchResults);
+
+        if (i + BATCH_SIZE < offers.length) {
+            console.log(`⏳ Waiting ${WAIT_MS / 1000}s before next batch...`);
+            await new Promise((r) => setTimeout(r, WAIT_MS));
+        }
+    }
+
+    console.log("🎯 All done!");
+    return results;
+}
+
+async function updateRowListings(listing) {
     const headers = {
         Accept: "application/json",
         "Api-token": "e87666c8-85bf-471a-93c5-00e78770df55",
@@ -296,54 +432,20 @@ async function updateListings(listing) {
     return response
 }
 
-async function updateAllListings(listings) {
-    const BATCH_SIZE = 50;     // up to 50 per second
-    const WAIT_MS = 1000;      // wait 1s between batches
-    const results = [];
-
-    for (let i = 0; i < listings.length; i += BATCH_SIZE) {
-        const batch = listings.slice(i, i + BATCH_SIZE);
-        console.log(`🚀 Processing batch ${i / BATCH_SIZE + 1} (${batch.length} listings)`);
-
-        const batchResults = await Promise.all(
-            batch.map(async (listing) => {
-                try {
-                    const res = await updateListings(listing);
-                    console.log(`✅ Updated ${listing.id}`);
-                    return { id: listing.id, success: true, data: res.data };
-                } catch (err) {
-                    console.error(`❌ Failed ${listing.id}`, err.response?.data || err.message);
-                    return { id: listing.id, success: false, error: err.response?.data || err.message };
-                }
-            })
-        );
-
-        results.push(...batchResults);
-
-        // Wait before next batch if not finished
-        if (i + BATCH_SIZE < listings.length) {
-            console.log(`⏳ Waiting ${WAIT_MS / 1000}s before next batch...`);
-            await new Promise((r) => setTimeout(r, WAIT_MS));
-        }
-    }
-
-    console.log("🎯 All done!");
-    return results;
-}
-
 (async () => {
     await sendTelegramMessage("starting");
-    let eventss = await getMyListings();
+    let events = await getMyListings();
     //let n = await updateListings(eventss[0].listings[0])
     //let res = await updateAllListings(eventss);
-    let allListings = await getAllListings(eventss);
+    let allListings = await getAllListings(events);
     let separated = await separateListings(allListings);
     separated = findCheapestPrices(separated)
-    let response = getOffersToFix(events, minimums);
-    events = response.events;
+    let response = getOffersToFix(separated);
+    await updateListings(response.offersToFix)
+   /* events = response.events;
     let didNotUpdateMessages = response.didNotUpdateMessages;
     didNotUpdateMessages.forEach((x)=> console.log(x));
     await createNewTicket(client, events);
-    await sendTelegramMessage("finished " + events.length + " events");
+    await sendTelegramMessage("finished " + events.length + " events");*/
 })();
 
