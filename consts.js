@@ -1,4 +1,6 @@
 export const chatId = -4601755795;
+export const originalToken = "e87666c8-85bf-471a-93c5-00e78770df55";
+export const botAccountToken = "76471e2a-9cd4-4679-92e7-3f23020a8147";
 export const stadiums = new Map([['Emirates Stadium', new Map([
     ["max", 3],
     ["2", 2],

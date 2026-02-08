@@ -377,11 +377,11 @@ export async function getAllListings(events) {
 }
 
 
-export async function getMyListings() {
+export async function getMyListings(token) {
     const today = new Date().toISOString().split("T")[0]; // e.g. "2025-11-13"
     let myListings = await axios.get(`https://brokers.vividseats.com/webservices/listings/v2/get?fromEventDate=${today}`, {
         headers: {
-        'api-token': "e87666c8-85bf-471a-93c5-00e78770df55",
+        'api-token': token,
             accept: "application/json"
         }})
     let bigllistings = myListings.data.listings.filter((a)=>a.quantity >4)
